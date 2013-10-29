@@ -5,11 +5,9 @@ using System.Text;
 
 namespace Length
 {
-    public class Length
+    public struct Length
     {
-        
-
-        public Length(double value, Unit unit)
+        public Length(double value, Unit unit) : this()
         {
             Unit = unit;
             Value = value;
@@ -19,42 +17,29 @@ namespace Length
 
         public Unit Unit { get; private set; }
 
-        public override bool Equals(object obj)
+        public bool Equals(Length length)
         {
-            if (ReferenceEquals(null, obj)) return false;
-            if (ReferenceEquals(this, obj)) return true;
-            if (obj.GetType() != this.GetType()) return false;
-            return Equals((Length) obj);
+            return Value.Equals(length.Value) && Unit.ToBase().Equals(length.Unit.ToBase());
         }
 
-        protected bool Equals(Length length)
+        public static bool operator ==(Length length1, Length length2)
         {
-            return Value.Equals(length.Value) && Unit == length.Unit;
+            return length1 != null && length1.Equals(length2);
         }
 
-        public override int GetHashCode()
+        public static bool operator !=(Length length1, Length length2)
         {
-            unchecked
-            {
-                return (Value.GetHashCode() * 397) ^ (int)Unit;
-            }
+            return !(length1 == length2);
         }
 
-        public Length Convert(Unit unit)
+        public static bool operator >(Length length1, Length length2)
         {
-            if (this.Unit == unit)
-            {
-                return this;
-            }
-            else
-            {
-                if (unit == Unit.CentiMetre && this.Unit == Unit.Metre)
-                {
-                    var transmit = new Length(this.Value*100, unit);
-                    return transmit;
-                }
-                return null;
-            }
+            throw new NotImplementedException();
+        }
+
+        public static bool operator <(Length length1, Length length2)
+        {
+            throw new NotImplementedException();
         }
     }
 
@@ -63,5 +48,20 @@ namespace Length
         MilliMetre,
         CentiMetre,
         Metre
+    }
+
+    internal static class UnitExtensions
+    {
+        private static readonly Dictionary<Unit, double> rateMap = new Dictionary<Unit, double>()
+            {
+                { Unit.MilliMetre, 1 },
+                { Unit.CentiMetre, 100 },
+                { Unit.Metre, 1000 }
+            };
+
+        public static double ToBase(this Unit unit)
+        {
+            return rateMap[unit];
+        }
     }
 }

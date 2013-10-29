@@ -3,3 +3,8 @@ c:\users\twer\documents\visual studio 2010\Projects\Length\Length\bin\Debug\Leng
 c:\users\twer\documents\visual studio 2010\Projects\Length\Length\obj\Debug\ResolveAssemblyReference.cache
 c:\users\twer\documents\visual studio 2010\Projects\Length\Length\obj\Debug\Length.dll
 c:\users\twer\documents\visual studio 2010\Projects\Length\Length\obj\Debug\Length.pdb
+C:\ooBootcamp\Length\ooBootcamp\Length\bin\Debug\Length.dll
+C:\ooBootcamp\Length\ooBootcamp\Length\bin\Debug\Length.pdb
+C:\ooBootcamp\Length\ooBootcamp\Length\obj\Debug\ResolveAssemblyReference.cache
+C:\ooBootcamp\Length\ooBootcamp\Length\obj\Debug\Length.dll
+C:\ooBootcamp\Length\ooBootcamp\Length\obj\Debug\Length.pdb

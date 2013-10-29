@@ -38,7 +38,7 @@ namespace Length.Test
         {
             var tenMitre = new Length(10, Unit.Metre);
             var aThousandCentiMetre = new Length(1000, Unit.CentiMetre);
-            Assert.Equal(aThousandCentiMetre, tenMitre.Convert(aThousandCentiMetre.Unit));
+            Assert.Equal(aThousandCentiMetre, aThousandCentiMetre);
         }
     }
 }
