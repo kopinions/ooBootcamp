@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Xunit;
 
-namespace Length.Test
+namespace OOBootcamp.Test
 {
 
     public class LengthTest
