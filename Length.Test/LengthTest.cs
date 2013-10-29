@@ -1,8 +1,4 @@
-﻿using System;
-using System.Text;
-using System.Collections.Generic;
-using System.Linq;
-using Xunit;
+﻿using Xunit;
 
 namespace OOBootcamp.Test
 {
@@ -38,7 +34,8 @@ namespace OOBootcamp.Test
         {
             var tenMitre = new Length(10, Unit.Metre);
             var aThousandCentiMetre = new Length(1000, Unit.CentiMetre);
-            Assert.Equal(aThousandCentiMetre, aThousandCentiMetre);
+            Assert.True(aThousandCentiMetre.Equals(tenMitre.Convert(aThousandCentiMetre.Unit)));
+            Assert.True(tenMitre.Equals(aThousandCentiMetre.Convert(tenMitre.Unit)));
         }
     }
 }

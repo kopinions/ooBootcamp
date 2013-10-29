@@ -1,26 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿﻿using System;
 
 namespace OOBootcamp
 {
-    public struct Length
+    public class Length
     {
-        public Length(double value, Unit unit) : this()
+        public Length(double value, Unit unit)
         {
             Unit = unit;
             Value = value;
         }
 
         public double Value { get; private set; }
-
         public Unit Unit { get; private set; }
 
         public bool Equals(Length length)
         {
-            return Value.Equals(length.Value) && Unit.ToBase().Equals(length.Unit.ToBase());
+            return Unit == length.Unit ? Value.Equals(length.Value) : Value.Equals(length.Value * Unit.ConvertTo(Unit));
         }
+
+
+        public Length Convert(Unit unit)
+        {
+            return new Length(Value * Unit.ConvertTo(unit), unit);
+        }
+
 
         public static bool operator ==(Length length1, Length length2)
         {
@@ -43,25 +46,28 @@ namespace OOBootcamp
         }
     }
 
-    public enum Unit
+    public class Unit
     {
-        MilliMetre,
-        CentiMetre,
-        Metre
-    }
-
-    internal static class UnitExtensions
-    {
-        private static readonly Dictionary<Unit, double> rateMap = new Dictionary<Unit, double>()
-            {
-                { Unit.MilliMetre, 1 },
-                { Unit.CentiMetre, 100 },
-                { Unit.Metre, 1000 }
-            };
-
-        public static double ToBase(this Unit unit)
+        public double Rate { get; private set; }
+        public readonly static Unit Metre = new Unit(1000);
+        public readonly static Unit CentiMetre = new Unit(10);
+        public readonly static Unit MilliMetre = new Unit(1);
+        
+        public Unit(double rate)
         {
-            return rateMap[unit];
+            Rate = rate;
+        }
+
+        public double ConvertTo(Unit to)
+        {
+            return Rate/to.Rate;
+        }
+
+        public static double ConvertTo(Unit from, Unit to)
+        {
+            return from.Rate / to.Rate;
         }
     }
+
 }
+
