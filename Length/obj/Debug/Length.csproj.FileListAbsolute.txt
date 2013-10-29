@@ -1,0 +1,5 @@
+c:\users\twer\documents\visual studio 2010\Projects\Length\Length\bin\Debug\Length.dll
+c:\users\twer\documents\visual studio 2010\Projects\Length\Length\bin\Debug\Length.pdb
+c:\users\twer\documents\visual studio 2010\Projects\Length\Length\obj\Debug\ResolveAssemblyReference.cache
+c:\users\twer\documents\visual studio 2010\Projects\Length\Length\obj\Debug\Length.dll
+c:\users\twer\documents\visual studio 2010\Projects\Length\Length\obj\Debug\Length.pdb

@@ -1,0 +1,9 @@
+c:\users\twer\documents\visual studio 2010\Projects\Length\Length.Test\bin\Debug\Length.Test.dll
+c:\users\twer\documents\visual studio 2010\Projects\Length\Length.Test\bin\Debug\Length.Test.pdb
+c:\users\twer\documents\visual studio 2010\Projects\Length\Length.Test\bin\Debug\Length.dll
+c:\users\twer\documents\visual studio 2010\Projects\Length\Length.Test\bin\Debug\Length.pdb
+c:\users\twer\documents\visual studio 2010\Projects\Length\Length.Test\obj\Debug\ResolveAssemblyReference.cache
+c:\users\twer\documents\visual studio 2010\Projects\Length\Length.Test\obj\Debug\Length.Test.dll
+c:\users\twer\documents\visual studio 2010\Projects\Length\Length.Test\obj\Debug\Length.Test.pdb
+c:\users\twer\documents\visual studio 2010\Projects\Length\Length.Test\bin\Debug\xunit.dll
+c:\users\twer\documents\visual studio 2010\Projects\Length\Length.Test\bin\Debug\xunit.xml

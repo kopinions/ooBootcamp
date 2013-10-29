@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Length", "Length\Length.csproj", "{63C79A20-92F5-49BC-ADFD-F7CA17949909}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Length.Test", "Length.Test\Length.Test.csproj", "{1C0555B8-E474-49E0-8F61-2693F7E959B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{66697874-309C-4D32-973C-66BF6C13441D}"
+	ProjectSection(SolutionItems) = preProject
+		Length.vsmdi = Length.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Length.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63C79A20-92F5-49BC-ADFD-F7CA17949909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63C79A20-92F5-49BC-ADFD-F7CA17949909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63C79A20-92F5-49BC-ADFD-F7CA17949909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63C79A20-92F5-49BC-ADFD-F7CA17949909}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C0555B8-E474-49E0-8F61-2693F7E959B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C0555B8-E474-49E0-8F61-2693F7E959B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C0555B8-E474-49E0-8F61-2693F7E959B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C0555B8-E474-49E0-8F61-2693F7E959B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
